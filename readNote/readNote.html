@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Read Note</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; background: #f9f9f9; }
+    .note-box { background: white; padding: 20px; border-radius: 8px; max-width: 600px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <div class="note-box">
+    <h2 id="noteTitle"></h2>
+    <p id="noteContent"></p>
+  </div>
+
+  <script>
+    const noteData = JSON.parse(localStorage.getItem("readNote"));
+    if (noteData) {
+      document.getElementById("noteTitle").textContent = noteData.title;
+      document.getElementById("noteContent").textContent = noteData.notes;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(76, 115, 221);
+}
+
+.complete-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.toggle-container {
+  padding: 10px;
+  border: 1px solid gainsboro;
+  margin: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 7px gainsboro;
+}
+header {
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+header h1 {
+  font-size: 1.3em;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn button {
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(76, 115, 221);
+  width: 30%;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn button a{
+  color:white;
+  text-decoration: none;
+}
+header h3 {
+  margin-top: 10px;
+}
+
+header button {
+  width: 30%;
+  height: 30px;
+  outline: none;
+  background: transparent;
+  color: rgb(76, 115, 221);
+  border-radius: 10px;
+  border-color: rgb(76, 115, 221);
+  cursor: pointer;
+  box-shadow: 0px 0px 4px blue;
+}
+
+header button:active {
+  box-shadow: none;
+}
+
+.toggle-body-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid gainsboro;
+  margin: 10px;
+  box-shadow: 0 0 6px gainsboro;
+}
+
+.doc p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgba(44, 43, 43, 0.825);
+}
+
+.btn-opt {
+  display: flex;
+  gap:5px;
+}
+
+.btn-opt button {
+  font-weight: 400;
+  font-size: 13x;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  outline: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  background: transparent;
+}

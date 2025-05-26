@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Note</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 2rem;
+        background: #f9f9f9;
+      }
+      .note-box {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 400px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #saveBtn {
+        align-self: flex-end;
+        padding: 5px;
+        background-color: rgb(35, 35, 219);
+        color: whitesmoke;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        width: 30%;
+        height: 35px;
+        cursor: pointer;
+        box-shadow: 0 0 1px 1px gainsboro;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="note-box">
+      <div class="content">
+        <h4 contenteditable="true" id="editTitle"></h4>
+        <p contenteditable="true" id="editContent"></p>
+      </div>
+      <button id="saveBtn">Save</button>
+    </div>
+    <script src="editNote.js"></script>
+  </body>
+</html>
