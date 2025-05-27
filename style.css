@@ -102,17 +102,17 @@ header button:active {
 
 .btn-opt {
   display: flex;
-  gap:5px;
+  gap:10px;
 }
 
 .btn-opt button {
-  font-weight: 400;
-  font-size: 13x;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 5px;
+  width: 60%;
+  height: 30px;
   outline: none;
-  border: none;
-  color: blue;
-  cursor: pointer;
   background: transparent;
+  color: rgb(76, 115, 221);
+  border-radius: 5px;
+  border-color: rgb(76, 115, 221);
+  cursor: pointer;
 }
